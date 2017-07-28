@@ -1,0 +1,3 @@
+# User Scenarios
+
+1. Jessica is a 30-something, single mother suburbanite whose parents are facing serious medical problems. She needs time off work to arrange care for both of them, and she worries that her employer will deny her leave because her company is too small to fall under FMLA. She worries about how she would provide for her children without a job to return to after her parents' affairs have been arranged. She thinks there should be a law protecting people like herself from losing their jobs while on leave. An election is on the horizon, representatives are listening to constituents, and she wants to contact her representatives to tell them to strengthen FMLA protections.
