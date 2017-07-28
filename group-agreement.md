@@ -7,10 +7,14 @@
 -	Try not to cut off people.
 -	Make sure loud and soft voices heard should be easy because none of us is an extrovert.
 -	If we have an idea we don’t want to forget, write it down and bring it up when someone else is not talking.
+- Use small room in the AM & Grace Hopper in the PM so we can hear each other.
 
 ### Conflict Plan
 -	Bring up issues in group first if possible
 -	If issue unresolved, bring in TA or Stephanie
+- If we can't bring up an issue right away, we introverts might put something in the middle of the table per [Stephanie](https://www.linkedin.com/in/stephanielingwood/).
+- Slack is also an option.
+- This is a non-partisan political site. Let's use purple, not red or blue.
 
 ### Workflow/Git
 -	Don’t merge own PR.
