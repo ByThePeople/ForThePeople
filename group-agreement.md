@@ -24,3 +24,4 @@
 -	Also use mob programming!
 -	For CSS: Use a style guide? Make it only good enough to present.
 -	Have everyone view a PR before merging.
+- Every morning, group pull from development
