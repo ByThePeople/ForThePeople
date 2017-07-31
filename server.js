@@ -1,3 +1,5 @@
+/* jshint browser: true, devel: true, esversion: 6 */
+
 'use strict';
 
 const express = require('express');
