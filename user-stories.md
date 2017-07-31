@@ -38,6 +38,6 @@ As a user, Jessica wants to be able to enter her home state into the app because
 
 As a person who just moved, Jessica wants to be able to register to vote in her current district, so her representatives will care about her opinions.
 
-As a busy mother whose children grab at her devices, Jessica wants her representatives' contact info persisted so that if the kids navigate away from the page, she can go back to the email she was writing.
+As a busy mother whose children grab at her devices, Jessica wants her representatives' contact info persisted so that if the kids navigate away from the page, she can go back to the page she was on for the information.
 
 As a busy mother whose children grab at her devices, Jessica wants her emails persisted so that if the kids navigate away from the page, she can go back to the email she was writing.
