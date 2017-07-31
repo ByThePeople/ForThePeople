@@ -28,4 +28,6 @@ As a frustrated, underpaid young person with a large amount of debt, Bobby wants
 
 As a somewhat less-informed voter, Bobby wants an app that will aggregate representatives and their voting record as well as a small list of ways to get involved. He wants this displayed in a clean and easy-to-read format.
 
-As a beautiful human Bobby wants this web app to not only provide pictures of their representatives but contact information and contact information so he can voice his concerns.
+As a beautiful sweetie-pie, Bobby wants this web app to not only provide pictures of their representatives but contact information and contact information so he can voice his concerns.
+
+As an electronically inclined millenial, Bobby wants the web app to be just as useful on his phone or tablet as it is on his desktop.
