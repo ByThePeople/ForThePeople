@@ -5,7 +5,7 @@ One HTML page: index.HTML
 3 Views:
 * home (/)
 * aboutus (/aboutus)
-* reps (/reps)
+* contactinfo (/)
 
 Home view includes a form with a textbox input for entering voter's address and a submit button. Includes hamburger nav that pops up link to '/aboutus' view. Turns into static nav bar when screen size larger than 640.
 
