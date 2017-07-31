@@ -21,3 +21,5 @@ Submit button sends to senators' email addresses.
 Model includes 2 databases:
 * Google Civic API (https://developers.google.com/civic-information/) which gets us an object of the elected representatives.
 * Postgres database that stores a table of those representatives for persistence and delivery to form
+
+Have a simple, easy to remember name so people can remember it and tell others about it
