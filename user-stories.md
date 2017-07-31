@@ -21,3 +21,13 @@ As a senior citizen, Mr. Jones wants to use an app that is simple and easy to re
 As an older gentleman with better things to do, Mr. Jones want to contact someone quickly so he can get back to watching Matlock.
 
 As a concerned citizen, Mr. Jones wants to also know where his elected representatives will be appearing next so he can bring his issues to them directly.
+
+As an electronically adept youth, Bobby wants to have a web-app that's intuitive, modern, clean and easy to use.
+
+As a frustrated, underpaid young person with a large amount of debt, Bobby wants an efficient and free way to contact his representatives to voice his opposition to exorbitant student loan debt accross the US.
+
+As a somewhat less-informed voter, Bobby wants an app that will aggregate representatives and their voting record as well as a small list of ways to get involved. He wants this displayed in a clean and easy-to-read format.
+
+As a beautiful sweetie-pie, Bobby wants this web app to not only provide pictures of their representatives but contact information and contact information so he can voice his concerns.
+
+As an electronically inclined millenial, Bobby wants the web app to be just as useful on his phone or tablet as it is on his desktop.
