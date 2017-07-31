@@ -22,16 +22,16 @@ As an electronically adept youth, Bobby wants to have a web-app that's intuitive
 
 As an electronically inclined millenial, Bobby wants the web app to be just as useful on his phone or tablet as it is on his desktop.
 
+As a frustrated, underpaid young person with a large amount of debt, Bobby wants an efficient and free way to contact his representatives to voice his opposition to exorbitant student loan debt across the US.
+
 ### Stretch
 
 As a concerned mom, Misty has seen some, what she deems as "inappropriate behavior" going on around her kids' school so she wants to contact all of her local reps in one quick, easy platform so she can save time for her family.
 
 As a concerned citizen, Mr. Jones wants to also know where his elected representatives will be appearing next so he can bring his issues to them directly.
 
-As a frustrated, underpaid young person with a large amount of debt, Bobby wants an efficient and free way to contact his representatives to voice his opposition to exorbitant student loan debt accross the US.
-
 As a somewhat less-informed voter, Bobby wants an app that will aggregate representatives and their voting record as well as a small list of ways to get involved. He wants this displayed in a clean and easy-to-read format.
 
-As a beautiful sweetie-pie, Bobby wants this web app to not only provide pictures of their representatives but contact information and contact information so he can voice his concerns.
+As a beautiful sweetie-pie, Bobby wants this web app to not only provide contact information but pictures of their representatives as well so he can voice his concerns.
 
 As a user, Jessica wants to be able to enter her home state into the app because she wants contact information for her U.S. senators.
