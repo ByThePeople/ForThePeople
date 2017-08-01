@@ -4,12 +4,21 @@
     <meta charset="utf-8">
     <title>For The People</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/state.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
-    <link rel="stylesheet" href="vendor/normalize.css">
+    <script id="contact-info-template" type="text/x-handlebars-template">
+      <representatives>
+        <header>
+          <h3>Representatives</h3>
+        </header>
+        <section class="rep-body">
 
+        </section>
+      </representatives>
+    </script>
   </head>
   <body>
     <header>
@@ -31,7 +40,8 @@
 
     </section>
 
-    <section id="contact-info" class="page-element">
+    <section id="contact-info-section" class="page-element">
+      <!-- handlebars-generated content goes here -->
       <form id="email-input">
         <fieldset>
           <legend>Write an email to your representative: </legend>
