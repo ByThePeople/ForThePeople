@@ -1,26 +1,21 @@
 /* jshint browser: true, devel: true, esversion: 6 */
 
 'use strict';
-
 var app = app || {};
 
-(function(module){
-
-  const userAddress = {};
-
-  userAddress.submit = function() {
-    console.log('inside userAddres.submit');
-    $('#firstForm').on('click', function(event){
-      event.preventDefault();
-
-      console.log(event.target.val);
-      var address = $('input').val();
-      console.log(`${address} inside on click`);
+(function(module) {
+  let reps = {};
+  reps.all = [];
+  reps.requestReps = function (callback) {
+    $.ajax({
+      url: `https://www.googleapis.com/civicinfo/v2/representatives?address=${app.userAddress.address}&includeOffices=true&levels=country&roles=legislatorUpperBody&fields=officials(address%2Cemails%2Cname%2Cphones%2CphotoUrl%2Curls)&key=AIzaSyBLrEwAa_izFBzfVNMZF7xgcAXk0V2484Q`,
+      method: 'GET'
     })
-
+    .then(function(response) {
+      reps.all = response;
+    console.log(reps.all);
+    })
+    .then(callback);
   }
-
-
-  userAddress.submit();
-  module.userAddress = userAddress;
+  module.reps = reps;
 })(app);
