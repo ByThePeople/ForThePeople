@@ -12,9 +12,8 @@ var app = app || {};
       method: 'GET'
     })
     .then(function(response) {
-      console.log(response);
       reps.all = response;
-      console.log(reps.all);
+    console.log(reps.all);
     })
     .then(callback);
   }

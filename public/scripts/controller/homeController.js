@@ -11,7 +11,6 @@ var app = app || {};
       event.preventDefault();
       userAddress.address = $('input').val();
       app.reps.requestReps();
-  console.log(`${userAddress.address} inside on click`);
     })
   }
   userAddress.submit();
