@@ -20,14 +20,19 @@
         </ul>
       </nav>
     </header>
-    <section id="home-section">
+    <section id="home-section" class="page-element">
       <form id="address-input">
-          <p>Input Address</p>
-          <p>Street Address: <input type="text" name="Street Address"></p>
-          <input type="submit" value="Submit Address">
+          Input Address: <input type="text" name="Street Address">
+          <!-- <input type="submit" value="Submit Address"> -->
+          <button id="firstForm" type="button" name="button">Submit Address</button>
       </form>
     </section>
-    <section id="contact-info">
+
+    <section id="trending-section" class="page-element">
+
+    </section>
+
+    <section id="contact-info" class="page-element">
       <form id="email-input">
         <fieldset>
           <legend>Write an email to your representative: </legend>
@@ -39,7 +44,7 @@
         </fieldset>
       </form>
     </section>
-    <section id="about-section">
+    <section id="about-section" class="page-element">
       <header>
         <h2>About Us</h2>
       </header>
@@ -74,5 +79,9 @@
     </section>
     <footer>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.min.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="scripts/model/app.js"></script>
   </body>
 </html>
