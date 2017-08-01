@@ -16,11 +16,15 @@
         </header>
         <section class="rep-body">
            <div>
-             {#each reps.all}
+             {{#each reps.all}}
                {{this.name}}
                {{this.phones[0]}}
                {{this.urls[0]}}
-               {{this.emails[0]}}
+               {{#if this.emails[0]}}
+                 {{this.emails[0]}}
+               {{else if this.urls[0]}}
+                 <a href="{{this.urls[0]}}" target="_blank"></a>
+               {{/if}}
              {#/each}
            </div>
         </section>

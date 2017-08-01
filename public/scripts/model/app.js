@@ -12,7 +12,7 @@ var app = app || {};
       method: 'GET'
     })
     .then(function(response) {
-      reps.all = response;
+      reps.all = response.officials;
     console.log(reps.all);
     })
     .then(callback);
