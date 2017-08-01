@@ -4,7 +4,9 @@
   "description": "civic engagement in an app",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "nodemailer": "^4.0.1",
+    "twit": "^2.2.9"
   },
   "devDependencies": {},
   "scripts": {
