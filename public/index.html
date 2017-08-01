@@ -15,7 +15,14 @@
           <h3>Representatives</h3>
         </header>
         <section class="rep-body">
-
+           <div>
+             {#each reps.all}
+               {{this.name}}
+               {{this.phones[0]}}
+               {{this.urls[0]}}
+               {{this.emails[0]}}
+             {#/each}
+           </div>
         </section>
       </representatives>
     </script>
