@@ -6,7 +6,7 @@ As developers, we want to return contact information for U.S. senators because p
 
 As developers, we want to write valid HTML so that Jessica, Bobby, Mr. Jones, and Misty can use any browser to access our site.
 
-As a user, Jessica wants to be able to enter her zip code into the app because she wants contact information for her U.S. senators.
+As a user, Jessica wants to be able to enter her address into the app because she wants contact information for her U.S. senators.
 
 As a mom, Misty wants a site that makes it easier to find out who her local representatives are so she can contact them if she has an idea for a new law or one that needs to be changed, with regards to her family.
 
@@ -35,3 +35,9 @@ As a somewhat less-informed voter, Bobby wants an app that will aggregate repres
 As a beautiful sweetie-pie, Bobby wants this web app to not only provide contact information but pictures of their representatives as well so he can voice his concerns.
 
 As a user, Jessica wants to be able to enter her home state into the app because she wants contact information for her U.S. senators.
+
+As a person who just moved, Jessica wants to be able to register to vote in her current district, so her representatives will care about her opinions.
+
+As a busy mother whose children grab at her devices, Jessica wants her representatives' contact info persisted so that if the kids navigate away from the page, she can go back to the page she was on for the information.
+
+As a busy mother whose children grab at her devices, Jessica wants her emails persisted so that if the kids navigate away from the page, she can go back to the email she was writing.

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>For The People</title>
+  </head>
+
+  <header>
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+
+    <section id="home-section">
+      <form id="address-input">
+          <p>Input Address</p>
+          <p>Street Address: <input type="text" name="Street Address"></p>
+          <input type="submit" value="Submit Address">
+      </form>
+    </section>
+
+    <section id="about-section">
+    </section>
+
+    <section id="contact-info">
+      <form id="email-input">
+        <fieldset>
+          <legend>Write an email to your representative: </legend>
+          <input id="to" name="to" type="email" placeholder="Representative's Email" autocomplete="on" autofocus required/>
+          <input id="from" name="from" type="email" placeholder="Your Email" autocomplete="on" required/>
+          <input id="subject" name="subject" type="text" placeholder="Subject" autocomplete="on" required/>
+          <textarea id="email-body" name="email-body" placeholder="Write email here!" autocomplete="on" required/></textarea>
+          <button type="button">Send Email</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </body>
+
+</html>
