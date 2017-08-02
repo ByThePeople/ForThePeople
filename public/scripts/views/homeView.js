@@ -9,7 +9,6 @@ var app = app || {};
   const homeView = {};
 
   homeView.homeViewInit = () => {
-       console.log('in homeViewInit');
     $('.page-element').hide();
     $('#home-section').fadeIn();
   };
