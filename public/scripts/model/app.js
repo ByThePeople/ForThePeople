@@ -8,11 +8,13 @@ var app = app || {};
   reps.all = [];
   reps.requestReps = function (callback) {
     $.ajax({
-      url: `https://www.googleapis.com/civicinfo/v2/representatives?address=${app.userAddress.address}&includeOffices=true&levels=country&roles=legislatorUpperBody&fields=officials(address%2Cemails%2Cname%2Cphones%2CphotoUrl%2Curls)&key=AIzaSyBLrEwAa_izFBzfVNMZF7xgcAXk0V2484Q`,
+      url: `https://www.googleapis.com/civicinfo/v2/representatives?address=${app.userAddress.address}&includeOffices=true&levels=administrativeArea1&roles=headOfGovernment&fields=officials(address%2Cemails%2Cname%2Cphones%2CphotoUrl%2Curls)&key=AIzaSyBLrEwAa_izFBzfVNMZF7xgcAXk0V2484Q`,
       method: 'GET'
     })
     .then(function(response) {
-      reps.all = response;
+      // Only one object in the array (governor), but we can expand to other reps later
+      reps.all = response.officials;
+      //reps.all = response.officials[0];
     console.log(reps.all);
     })
     .then(callback);
