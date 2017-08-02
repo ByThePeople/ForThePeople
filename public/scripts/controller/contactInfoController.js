@@ -4,16 +4,9 @@ var app = app || {};
 
 (function(module){
 
-     console.log('in contactInfoController');
- // Instantiate contactInfoController object
-  let contactInfoController = {};
+  // Instantiate contactInfoController object
+  const contactInfoController = {};
   const formAsLetter = {};
-
-// Hide home and about us sections. Then fadeIn contact info section.
-// contactInfoController.getContactInfoSection = () => {
-// };
-
-
 
   function printSection(divName) {
     var printContents = $(divName).html();

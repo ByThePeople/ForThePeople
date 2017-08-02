@@ -36,18 +36,21 @@
         </ul>
       </nav>
       <h1>For the People</h1>
-      <h2>Contact Your Governor</h2>
     </header>
     <section id="home-section" class="page-element">
+      <header>
+        <h2>Contact Your Governor</h2>
+      </header>
       <form id="address-input">
           Input Address: <input type="text" name="Street Address">
 
             <!-- <button id="btn-submit-address" type="button" name="button">
               <a href="/contactinfo">Submit Address</a>
             </button> -->
-            <a href="/contactinfo"><button id="btn-submit-address" type="button" name="button">
+            <!--<a href="/contactinfo">-->
+            <button id="btn-submit-address" type="button" name="button">
               Submit Address
-            </button></a>
+            </button><!--</a>-->
 
       </form>
     </section>
@@ -58,7 +61,7 @@
 
     <section id="contact-info-section" class="page-element">
       <header>
-        <h3>Governor</h3>
+        <h2>Governor</h2>
       </header>
       <ul>
       <!-- handlebars-generated content goes here -->
@@ -113,12 +116,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.min.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-    <script src="scripts/controller/homeController.js"></script>
-    <script src="scripts/controller/contactInfoController.js"></script>
-
-    <script src="scripts/controller/routes.js"></script>
-
     <script src="scripts/model/app.js"></script>
     <script src="scripts/views/contactInfoView.js"></script>
+    <script src="scripts/views/homeView.js"></script>
+    <script src="scripts/controller/homeController.js"></script>
+    <script src="scripts/controller/contactInfoController.js"></script>
+    <script src="scripts/controller/aboutController.js"></script>
+    <script src="scripts/controller/routes.js"></script>
   </body>
 </html>
