@@ -5,6 +5,7 @@ var app = app || {};
 
 (function(module) {
   let reps = {};
+  const emailForm = {};
 
   reps.all = [];
 
@@ -21,6 +22,20 @@ var app = app || {};
     .then(callback);
   }
 
+  emailForm.all = {};
+
+  emailForm.getFormData = function () {
+    $('#btn-send-email').on('click', function(event){
+      event.preventDefault();
+      let userObject = {
+        issues: $('#subject').val(),
+        username: $('#from').val(),
+        body: $('#email-body').val()
+      };
+      emailForm.all = userObject;
+    })
+  }
 
   module.reps = reps;
+  module.emailForm = emailForm;
 })(app);

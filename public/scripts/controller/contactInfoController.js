@@ -4,15 +4,10 @@ var app = app || {};
 
 (function(module){
 
-  // Instantiate contactInfoController object
-  const contactInfoController = {};
   const formAsLetter = {};
 
-  // contactInfoController.init = () => {
-  //   $('.page-element').hide();
-  //   // $('#contact-info-section').show();
-    // app.reps.requestReps(app.contactInfoView.index);
-  // }
+  // From app.js, when submit email button, store form data
+  app.emailForm.getFormData();
 
   function printSection(divName) {
     var printContents = $(divName).html();
@@ -31,8 +26,6 @@ var app = app || {};
   }
   formAsLetter.submit();
 
-  // Attach contactInfoController to module
-  module.contactInfoController = contactInfoController;
   module.formAsLetter = formAsLetter;
 
 })(app)
