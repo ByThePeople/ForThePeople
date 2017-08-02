@@ -4,9 +4,8 @@ var app = app || {};
 
 (function(module){
 
-     console.log('in contactInfoController');
- // Instantiate contactInfoController object
-  let contactInfoController = {};
+  // Instantiate contactInfoController object
+  const contactInfoController = {};
   const formAsLetter = {};
 
   // contactInfoController.init = () => {
