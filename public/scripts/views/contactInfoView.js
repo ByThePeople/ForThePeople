@@ -16,9 +16,10 @@ var app = app || {};
     $('#contact-info-section').children('ul').empty();
     // Map reps
     let mappedReps = app.reps.all.map(renderContactInfo);
-  console.log('after mappedReps');
-    // Append reps
+    // Append reps to #contact-info-section
     $('#contact-info-section ul').append(mappedReps);
+    // Place governor's email in contact form because we return only governor for now.
+    $('#to').val(app.reps.all[0].emails);
   };
   // gives us app.contactInfoView
   module.contactInfoView = contactInfoView;

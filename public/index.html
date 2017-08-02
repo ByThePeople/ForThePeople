@@ -22,7 +22,6 @@
                    <a href="{{urls}}" target="_blank">Website</a>
                  {{/if}}
              </p>
-
            </li>
         </section>
       </representatives>
@@ -36,11 +35,15 @@
           <li><a href="/aboutus">About Us</a></li>
         </ul>
       </nav>
+      <h1>For the People</h1>
+      <h2>Contact Your Governor</h2>
     </header>
     <section id="home-section" class="page-element">
       <form id="address-input">
           Input Address: <input type="text" name="Street Address">
-          <button id="firstForm" type="button" name="button">Submit Address</button>
+
+            <button id="btn-submit-address" type="button" name="button"><a href="/contactinfo">Submit Address</a></button>
+
       </form>
     </section>
 
@@ -50,14 +53,14 @@
 
     <section id="contact-info-section" class="page-element">
       <header>
-        <h3>Representatives</h3>
+        <h3>Governor</h3>
       </header>
       <ul>
       <!-- handlebars-generated content goes here -->
       </ul>
       <form id="email-input">
         <fieldset>
-          <legend>Write an email to your representative: </legend>
+          <legend>Write an email to your governor:</legend>
           <input id="to" name="to" type="email" placeholder="Representative's Email" autocomplete="on" autofocus required/>
           <input id="from" name="from" type="text" placeholder="Your Name" autocomplete="on" required/>
           <input id="subject" name="subject" type="text" placeholder="Subject" autocomplete="on" required/>
@@ -66,6 +69,7 @@
         </fieldset>
       </form>
     </section>
+
     <section id="about-section" class="page-element">
       <header>
         <h2>About Us</h2>
@@ -106,6 +110,9 @@
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="scripts/controller/homeController.js"></script>
     <script src="scripts/controller/contactInfoController.js"></script>
+
+    <script src="scripts/controller/routes.js"></script>
+
     <script src="scripts/model/app.js"></script>
     <script src="scripts/views/contactInfoView.js"></script>
   </body>

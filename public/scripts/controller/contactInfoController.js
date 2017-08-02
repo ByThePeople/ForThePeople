@@ -1,11 +1,23 @@
 /* jshint browser: true, devel: true, esversion: 6 */
 
-'use strict';
-
 var app = app || {};
 
 (function(module){
+ // ======================================================= 
+     console.log('in contactInfoController');
+ // Instantiate contactInfoController object
+  let contactInfoController = {};
 
+  // Hide home and about us sections. Then fadeIn contact info section.
+  contactInfoController.getContactInfoSection = () => {
+  console.log('in getContactInfoSection');
+    $('.page-element').hide();
+    $('#contact-info-section').fadeIn();
+  };
+
+  // Attach contactInfoController to module
+  module.contactInfoController = contactInfoController; 
+// ========================================================
   const formAsLetter = {};
 
   function printSection(divName) {
