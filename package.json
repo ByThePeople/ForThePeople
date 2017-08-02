@@ -6,6 +6,7 @@
   "dependencies": {
     "express": "^4.15.3",
     "nodemailer": "^4.0.1",
+    "page": "^1.7.1",
     "twit": "^2.2.9"
   },
   "devDependencies": {},
