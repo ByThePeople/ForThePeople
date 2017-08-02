@@ -16,7 +16,6 @@ var app = app || {};
     $('#contact-info-section').children('ul').empty();
     // Map reps
     let mappedReps = app.reps.all.map(renderContactInfo);
-    //let mappedReps = renderContactInfo(app.reps.all);
   console.log('after mappedReps');
     // Append reps
     $('#contact-info-section ul').append(mappedReps);

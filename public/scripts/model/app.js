@@ -14,7 +14,6 @@ var app = app || {};
     .then(function(response) {
       // Only one object in the array (governor), but we can expand to other reps later
       reps.all = response.officials;
-      //reps.all = response.officials[0];
     console.log(reps.all);
     })
     .then(callback);
