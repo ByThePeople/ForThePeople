@@ -1,7 +1,7 @@
 /* jshint browser: true, devel: true, esversion: 6 */
 
 'use strict';
-
+   console.log('in contactInfoController');
 var app = app || {};
 
 //IIFE
@@ -11,12 +11,10 @@ var app = app || {};
   let contactInfoController = {};
 
   // Hide home and about us sections. Then fadeIn contact info section.
-  contactInfoController.getcontactInfoSection = () => {
+  contactInfoController.getContactInfoSection = () => {
+  console.log('in getContactInfoSection');
     $('.page-element').hide();
     $('#contact-info-section').fadeIn();
-
-    // A contactInfoView object is the callback so the view can render after data loads
-    app.reps.requestReps(app.contactInfoView.index);
   };
 
   // Attach contactInfoController to module
