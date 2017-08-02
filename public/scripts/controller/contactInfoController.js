@@ -9,12 +9,9 @@ var app = app || {};
   let contactInfoController = {};
   const formAsLetter = {};
 
-  // Hide home and about us sections. Then fadeIn contact info section.
-  contactInfoController.getContactInfoSection = () => {
-  console.log('in getContactInfoSection');
-    $('.page-element').hide();
-    $('#contact-info-section').fadeIn();
-  };
+// Hide home and about us sections. Then fadeIn contact info section.
+// contactInfoController.getContactInfoSection = () => {
+// };
 
 
 

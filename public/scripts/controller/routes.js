@@ -1,7 +1,7 @@
 /* jshint browser: true, devel: true, esversion: 6 */
 
 'use strict';
-var app = app || {}; // not sure this line is necessary
+// var app = app || {}; // not sure this line is necessary
 
 // TODO: Home route should be added, but homeController.getHomeSection needs to be written
 //page('/', app.homeController.getHomeSection);
@@ -10,7 +10,7 @@ var app = app || {}; // not sure this line is necessary
 //page('/aboutus', app.aboutController.getAboutSection);
 
 // Contact info route
-page('/contactinfo', app.contactInfoController.getContactInfoSection);
+// page('/contactinfo', app.contactInfoController.getContactInfoSection);
 
 // Call page()
 page();
