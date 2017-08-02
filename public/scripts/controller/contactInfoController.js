@@ -1,13 +1,11 @@
 /* jshint browser: true, devel: true, esversion: 6 */
 
-'use strict';
-   console.log('in contactInfoController');
 var app = app || {};
 
-//IIFE
-(function(module) {
-
-  // Instantiate contactInfoController object
+(function(module){
+ // ======================================================= 
+     console.log('in contactInfoController');
+ // Instantiate contactInfoController object
   let contactInfoController = {};
 
   // Hide home and about us sections. Then fadeIn contact info section.
@@ -18,5 +16,27 @@ var app = app || {};
   };
 
   // Attach contactInfoController to module
-  module.contactInfoController = contactInfoController;
-})(app);
+  module.contactInfoController = contactInfoController; 
+// ========================================================
+  const formAsLetter = {};
+
+  function printSection(divName) {
+    var printContents = $(divName).html();
+    var w = window.open();
+    w.document.write(printContents);
+    w.print();
+    w.close();
+  }
+
+  formAsLetter.submit = () => {
+    $('#print').on('click', (event) => {
+  console.log('just after click registered')
+      event.preventDefault();
+      printSection('#email-input');
+    })
+  }
+  formAsLetter.submit();
+
+  module.formAsLetter = formAsLetter;
+
+})(app)
