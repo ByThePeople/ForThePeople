@@ -8,6 +8,12 @@ var app = app || {};
   const contactInfoController = {};
   const formAsLetter = {};
 
+  // contactInfoController.init = () => {
+  //   $('.page-element').hide();
+  //   // $('#contact-info-section').show();
+    // app.reps.requestReps(app.contactInfoView.index);
+  // }
+
   function printSection(divName) {
     var printContents = $(divName).html();
     var w = window.open();
@@ -19,7 +25,8 @@ var app = app || {};
   formAsLetter.submit = () => {
     $('#print').on('click', (event) => {
       event.preventDefault();
-      printSection('#email-input');
+      app.letterView.index();
+      printSection('#print-letter-section');
     })
   }
   formAsLetter.submit();

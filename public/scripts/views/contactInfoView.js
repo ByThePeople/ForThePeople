@@ -1,12 +1,11 @@
 /* jshint browser: true, devel: true, esversion: 6 */
-
 'use strict';
+
 var app = app || {};
 
 (function(module) {
   // an object to hold our functions
   let contactInfoView = {};
-
   // Handlebars generates the contact info
   let renderContactInfo = Handlebars.compile($('#contact-info-template').text());
 

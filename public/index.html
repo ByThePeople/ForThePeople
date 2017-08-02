@@ -26,6 +26,25 @@
         </section>
       </representatives>
     </script>
+
+    <script id="print-header-template" type="text/x-handlebars-template">
+      <p>
+        {{name}}<br>
+        {{#each address}}
+          {{line1}}<br>
+          {{city}}, {{state}} <br>
+          {{zip}}<br>
+        {{/each}}
+      </p>
+    </script>
+
+    <script id="print-body-template" type="text/x-handlebars-template">
+      <p><strong>RE:{{issue}}</strong></p>
+      <p>{{body}}</p>
+      <p>Sincerely,</p>
+      <p>{{user-name}}</p>
+    </script>
+
   </head>
   <body>
     <header>
@@ -78,6 +97,11 @@
       </form>
     </section>
 
+    <section id="print-letter-section" class="page-element">
+      <div id="print-header-div"></div>
+      <div id="print-body-div"></div>
+    </section>
+
     <section id="about-section" class="page-element">
       <header>
         <h2>About Us</h2>
@@ -116,11 +140,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.min.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+
+
     <script src="scripts/model/app.js"></script>
     <script src="scripts/views/contactInfoView.js"></script>
     <script src="scripts/views/homeView.js"></script>
     <script src="scripts/controller/homeController.js"></script>
+    <script src="scripts/views/contactInfoView.js"></script>
     <script src="scripts/controller/contactInfoController.js"></script>
+
+    <script src="scripts/views/letterView.js"></script>
+    <script src="scripts/controller/letterController.js"></script>
+
     <script src="scripts/controller/aboutController.js"></script>
     <script src="scripts/controller/routes.js"></script>
   </body>
