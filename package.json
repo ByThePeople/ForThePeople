@@ -5,8 +5,10 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.15.3",
+    "fs": "0.0.1-security",
     "nodemailer": "^4.0.1",
     "page": "^1.7.1",
+    "pg": "^7.0.2",
     "twit": "^2.2.9"
   },
   "devDependencies": {},
