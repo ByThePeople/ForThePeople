@@ -3,10 +3,11 @@
 var app = app || {};
 
 (function(module){
- // ======================================================= 
+
      console.log('in contactInfoController');
  // Instantiate contactInfoController object
   let contactInfoController = {};
+  const formAsLetter = {};
 
   // Hide home and about us sections. Then fadeIn contact info section.
   contactInfoController.getContactInfoSection = () => {
@@ -15,10 +16,7 @@ var app = app || {};
     $('#contact-info-section').fadeIn();
   };
 
-  // Attach contactInfoController to module
-  module.contactInfoController = contactInfoController; 
-// ========================================================
-  const formAsLetter = {};
+
 
   function printSection(divName) {
     var printContents = $(divName).html();
@@ -30,13 +28,14 @@ var app = app || {};
 
   formAsLetter.submit = () => {
     $('#print').on('click', (event) => {
-  console.log('just after click registered')
       event.preventDefault();
       printSection('#email-input');
     })
   }
   formAsLetter.submit();
 
+  // Attach contactInfoController to module
+  module.contactInfoController = contactInfoController;
   module.formAsLetter = formAsLetter;
 
 })(app)
