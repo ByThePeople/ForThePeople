@@ -10,9 +10,10 @@ var app = app || {};
     $('#firstForm').on('click', function(event){
       event.preventDefault();
       userAddress.address = $('input').val();
-      app.reps.requestReps();
+      app.reps.requestReps(app.contactInfoView.index);
     })
   }
+
   userAddress.submit();
   module.userAddress = userAddress;
 })(app);

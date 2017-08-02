@@ -11,27 +11,33 @@
     <link rel="stylesheet" href="styles/modules.css">
     <script id="contact-info-template" type="text/x-handlebars-template">
       <representatives>
-        <header>
-          <h3>Representatives</h3>
-        </header>
         <section class="rep-body">
-           <div>
-             {{#each reps.all}}
-               {{this.name}}
-               {{this.phones[0]}}
-               {{this.urls[0]}}
-               {{#if this.emails[0]}}
-                 {{this.emails[0]}}
-               {{else if this.urls[0]}}
-                 <a href="{{this.urls[0]}}" target="_blank"></a>
-               {{/if}}
-             {#/each}
-           </div>
+           <li>
+             <p>
+                 {{name}}
+                 {{phones}}
+                 {{#if emails}}
+                   {{emails}}
+                 {{else if urls}}
+                   <a href="{{urls}}" target="_blank">Website</a>
+                 {{/if}}
+             </p>
+
+           </li>
         </section>
       </representatives>
     </script>
   </head>
   <body>
+    <!--{{#each reps.all}}
+      {{this.name}}
+    {{this.phones[0]}}
+      {{#if this.emails[0]}}
+        {{this.emails[0]}}
+      {{else if this.urls[0]}}
+        <a href="{{this.urls[0]}}" target="_blank"></a>
+      {{/if}}
+    {/each}-->
     <header>
       <nav id="nav-bar">
         <ul>
@@ -52,7 +58,12 @@
     </section>
 
     <section id="contact-info-section" class="page-element">
+      <header>
+        <h3>Representatives</h3>
+      </header>
+      <ul>
       <!-- handlebars-generated content goes here -->
+      </ul>
       <form id="email-input">
         <fieldset>
           <legend>Write an email to your representative: </legend>
@@ -73,7 +84,7 @@
           <a href="https://www.linkedin.com/in/sara-jade/"><img src="/img/profilePicSara.jpg" alt="Sara Jade's Profile Picture"/>
           <h3>Sara Jade</h3></a>
           <p>Sara is a pharmacist with who is changing careers. She has made the decision to go back to the future,
-            doing what she almost did after graduating high school - software development! Along the way, she has gotten a degree
+            doing what she almost did after graduating high school - software development! Along the way, she has obtained a degree
             in Information Systems, Software Development Track, from Bellevue College. She has also taught herself via Codecdademy,
             the Railsbridge group, the Flatiron School, and Ada Developers Academy's Jumpstart program. Now she is an apprentice at Microsoft via Apprenti
             training at Codefellows.</p>
@@ -104,6 +115,7 @@
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="scripts/controller/homeController.js"></script>
     <script src="scripts/model/app.js"></script>
+    <script src="scripts/views/contactInfoView.js"></script>
     <!-- <script src="scripts/controller/routes.js"></script> -->
   </body>
 </html>
