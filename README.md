@@ -5,7 +5,7 @@ Team name: **By the People**
 
 Team members: [Sara Jade](https://www.linkedin.com/in/sara-jade/), [Britini Malloy](https://www.linkedin.com/in/britini-malloy-a1a0b245/), [Drew Biehle](https://www.linkedin.com/in/drew-biehle-844a2b15/), [Ren Burnett](https://www.linkedin.com/in/renard-burnett-39170369/)
 
-Project Pitch: **ForThePeople** is a civic engagement site where citizens can enter their information and the site will return their elected representatives and contact info. Then the user will be delivered a form to directly engage with their chosen representatives.
+Project Pitch: [ForThePeople](https://forthepeeps.herokuapp.com/) is a civic engagement site where citizens can enter their information and the site will return their elected representatives and contact info. Then the user will be delivered a form to directly engage with their chosen representatives.
 
 Problem: People want to contact their elected representatives, and they need contact info.
 
@@ -16,3 +16,6 @@ Benefits: With contact information, citizens have a means to get laws passed and
 Stretch:
 #1 Add how representatives voted.
 #2 Add pictures of representatives.
+
+Heroku deployed link:
+https://forthepeeps.herokuapp.com/

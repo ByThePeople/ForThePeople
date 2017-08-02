@@ -19,5 +19,10 @@ Reps view shows nav, the two US Senators and their contact info retrieved. User 
 Submit button sends to senators' email addresses.
 
 Model includes 2 databases:
-* Google Civic API (https://developers.google.com/civic-information/) which gets us an object of the elected representatives.
+* [Google Civic API](https://developers.google.com/civic-information/) which gets us an object of the elected representatives.
 * Postgres database that stores a table of those representatives for persistence and delivery to form
+
+node modules
+[mailgun](https://www.npmjs.com/package/mailgun) to send emails from our form
+or [nodemailer](https://nodemailer.com/about/#tl-dr) 
+express

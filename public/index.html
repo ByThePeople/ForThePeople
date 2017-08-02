@@ -3,43 +3,147 @@
   <head>
     <meta charset="utf-8">
     <title>For The People</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/state.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+    <script id="contact-info-template" type="text/x-handlebars-template">
+      <representatives>
+        <section class="rep-body">
+           <li>
+             <p>
+                 {{name}}
+                 {{phones}}
+                 {{#if emails}}
+                   {{emails}}
+                 {{else if urls}}
+                   <a href="{{urls}}" target="_blank">Website</a>
+                 {{/if}}
+             </p>
+           </li>
+        </section>
+      </representatives>
+    </script>
+
+    <script id="print-header-template" type="text/x-handlebars-template">
+      <p>
+        {{name}}<br>
+        {{#each address}}
+          {{line1}}<br>
+          {{city}}, {{state}} <br>
+          {{zip}}<br>
+        {{/each}}
+      </p>
+    </script>
+
+    <script id="print-body-template" type="text/x-handlebars-template">
+      <p><strong>RE:{{issue}}</strong></p>
+      <p>{{body}}</p>
+      <p>Sincerely,</p>
+      <p>{{user-name}}</p>
+    </script>
+
   </head>
-
-  <header>
-    <nav id="nav-bar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <body>
-
-    <section id="home-section">
+    <header>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/aboutus">About Us</a></li>
+        </ul>
+      </nav>
+      <h1>For the People</h1>
+    </header>
+    <section id="home-section" class="page-element">
+      <header>
+        <h2>Contact Your Governor</h2>
+      </header>
       <form id="address-input">
-          <p>Input Address</p>
-          <p>Street Address: <input type="text" name="Street Address"></p>
-          <input type="submit" value="Submit Address">
+          Input Address: <input type="text" name="Street Address">
+            <button id="btn-submit-address" type="button" name="button">
+              Submit Address
+            </button>
+
       </form>
     </section>
 
-    <section id="about-section">
+    <section id="trending-section" class="page-element">
+
     </section>
 
-    <section id="contact-info">
+    <section id="contact-info-section" class="page-element">
+      <header>
+        <h2>Governor</h2>
+      </header>
+      <ul>
+      <!-- handlebars-generated content goes here -->
+      </ul>
       <form id="email-input">
         <fieldset>
-          <legend>Write an email to your representative: </legend>
+          <legend>Write an email to your governor:</legend>
           <input id="to" name="to" type="email" placeholder="Representative's Email" autocomplete="on" autofocus required/>
-          <input id="from" name="from" type="email" placeholder="Your Email" autocomplete="on" required/>
+          <input id="from" name="from" type="text" placeholder="Your Name" autocomplete="on" required/>
           <input id="subject" name="subject" type="text" placeholder="Subject" autocomplete="on" required/>
           <textarea id="email-body" name="email-body" placeholder="Write email here!" autocomplete="on" required/></textarea>
-          <button type="button">Send Email</button>
+          <button type="button">Send Email</button> or <button id="print">Print</button>
         </fieldset>
       </form>
     </section>
 
-  </body>
+    <section id="print-letter-section" class="page-element">
+      <div id="print-header-div"></div>
+      <div id="print-body-div"></div>
+    </section>
 
+    <section id="about-section" class="page-element">
+      <header>
+        <h2>About Us</h2>
+      </header>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/sara-jade/"><img src="/img/profilePicSara.jpg" alt="Sara Jade's Profile Picture"/>
+          <h3>Sara Jade</h3></a>
+          <p>Sara is a pharmacist with who is changing careers. She has made the decision to go back to the future,
+            doing what she almost did after graduating high school - software development! Along the way, she has obtained a degree
+            in Information Systems, Software Development Track, from Bellevue College. She has also taught herself via Codecdademy,
+            the Railsbridge group, the Flatiron School, and Ada Developers Academy's Jumpstart program. Now she is an apprentice at Microsoft via Apprenti
+            training at Codefellows.</p>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/britini-malloy-a1a0b245/"><img src="/img/profilePicBritini.jpg" alt="Britini Malloy's Profile Picture"/>
+          <h3>Britini Malloy</h3></a>
+          <p>After getting out of the Navy I worked at a bank and was looking for ideas before deciding to go back to school to use my GI Bill Benefits. I could not stand the system we used to do our daily work. I was constantly coming up with new ideas that would make the system better and more user friendly, and make our work more efficient. I just had no idea how to do it, much less how to go about doing any such things. So, I enrolled in school in a Computer Information Systems program and I worked for both my Bachelor's then my Master's. Unfortunately, it wasn't enough to help me get a job. Then the Apprenti program came along and gave me this great opportunity. I have been striving ever since to learn and be worthy of my opportunity!</p>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/drew-biehle-844a2b15/"><img src="/img/profilePicDrew.jpg" alt="Drew Biehle's Profile Picture"/>
+          <h3>Drew Biehle</h3></a>
+          <p>I am a software developer on my way to an apprenticeship at Microsoft through Apprenti. I have a degree in film and 11 years of market research experience, a beautiful and talented wife and an eerie and amazing son, and I'm proud to say I've voted for Democrats, Republicans, and Green Party candidates. Once I even shared a selfie with Paul Simon (the bow-tied Senator, not the singer).</p>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/renard-burnett-39170369/"><img src="img/profilePicRon.jpg" alt="Ron Bartlett's Slappin' Picture"/>
+          <h3>Renard Burnett</h3></a>
+          <p>Ol' Renny is an ex-composite repair technician who decided that after 6 short years at Boeing it was time for a career change!
+          Something that involved fewer hazardous chemicals, more flexibility, and something that's never not interesting; computers and technology!
+          In the immortal words of Cosmo Kramer: "Giddyup!"</p>
+        </li>
+      </ul>
+    </section>
+    <footer>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.min.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="scripts/model/app.js"></script>
+    <script src="scripts/views/contactInfoView.js"></script>
+    <script src="scripts/views/homeView.js"></script>
+    <script src="scripts/controller/homeController.js"></script>
+    <script src="scripts/views/contactInfoView.js"></script>
+    <script src="scripts/controller/contactInfoController.js"></script>
+    <script src="scripts/views/letterView.js"></script>
+    <script src="scripts/controller/letterController.js"></script>
+    <script src="scripts/controller/aboutController.js"></script>
+    <script src="scripts/controller/routes.js"></script>
+  </body>
 </html>
