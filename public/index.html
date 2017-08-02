@@ -41,7 +41,9 @@
     <section id="home-section" class="page-element">
       <form id="address-input">
           Input Address: <input type="text" name="Street Address">
-          <button id="firstForm" type="button" name="button">Submit Address</button>
+          <a href="/contactinfo">
+            <button id="firstForm" type="button" name="button">Submit Address</button>
+          </a>
       </form>
     </section>
 
@@ -49,26 +51,24 @@
 
     </section>
 
-    <a href="/contactinfo">
-      <section id="contact-info-section" class="page-element">
-        <header>
-          <h3>Governor</h3>
-        </header>
-        <ul>
-        <!-- handlebars-generated content goes here -->
-        </ul>
-        <form id="email-input">
-          <fieldset>
-            <legend>Write an email to your governor:</legend>
-            <input id="to" name="to" type="email" placeholder="Representative's Email" autocomplete="on" autofocus required/>
-            <input id="from" name="from" type="text" placeholder="Your Name" autocomplete="on" required/>
-            <input id="subject" name="subject" type="text" placeholder="Subject" autocomplete="on" required/>
-            <textarea id="email-body" name="email-body" placeholder="Write email here!" autocomplete="on" required/></textarea>
-            <button type="button">Send Email</button>
-          </fieldset>
-        </form>
-      </section>
-    </a>
+    <section id="contact-info-section" class="page-element">
+      <header>
+        <h3>Governor</h3>
+      </header>
+      <ul>
+      <!-- handlebars-generated content goes here -->
+      </ul>
+      <form id="email-input">
+        <fieldset>
+          <legend>Write an email to your governor:</legend>
+          <input id="to" name="to" type="email" placeholder="Representative's Email" autocomplete="on" autofocus required/>
+          <input id="from" name="from" type="text" placeholder="Your Name" autocomplete="on" required/>
+          <input id="subject" name="subject" type="text" placeholder="Subject" autocomplete="on" required/>
+          <textarea id="email-body" name="email-body" placeholder="Write email here!" autocomplete="on" required/></textarea>
+          <button type="button">Send Email</button>
+        </fieldset>
+      </form>
+    </section>
 
     <section id="about-section" class="page-element">
       <header>
