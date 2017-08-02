@@ -21,7 +21,6 @@ var app = app || {};
     // Place governor's email in contact form because we return only governor for now.
     $('#to').val(app.reps.all[0].emails);
 
-console.log('in getContactInfoSection');
     $('.page-element').hide();
     $('#contact-info-section').fadeIn();
   };

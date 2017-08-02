@@ -8,12 +8,6 @@ var app = app || {};
   const contactInfoController = {};
   const formAsLetter = {};
 
-// Hide home and about us sections. Then fadeIn contact info section.
-// contactInfoController.getContactInfoSection = () => {
-// };
-
-
-
   function printSection(divName) {
     var printContents = $(divName).html();
     var w = window.open();
