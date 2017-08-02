@@ -11,12 +11,10 @@ var app = app || {};
   const aboutController = {};
 
   // Hide all sections. Then fadeIn about section.
-  //aboutController.on('click', function() {
-    aboutController.getAboutSection = () => {
-      $('.page-element').hide();
-      $('#about-section').fadeIn();
-    };
-//  });
+  aboutController.getAboutSection = () => {
+    $('.page-element').hide();
+    $('#about-section').fadeIn();
+  };
 
   // Attach aboutController to module
   module.aboutController = aboutController;
