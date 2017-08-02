@@ -10,6 +10,7 @@ var app = app || {};
     $('#btn-submit-address').on('click', function(event){
       event.preventDefault();
       userAddress.address = $('input').val();
+
       app.reps.requestReps(app.contactInfoView.index);
     })
   }

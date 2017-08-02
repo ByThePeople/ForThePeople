@@ -9,14 +9,11 @@ var app = app || {};
   let contactInfoController = {};
   const formAsLetter = {};
 
-  // Hide home and about us sections. Then fadeIn contact info section.
-  contactInfoController.getContactInfoSection = () => {
-  console.log('in getContactInfoSection');
-    $('.page-element').hide();
-    $('#contact-info-section').fadeIn();
-  };
-
-
+  // contactInfoController.init = () => {
+  //   $('.page-element').hide();
+  //   // $('#contact-info-section').show();
+    // app.reps.requestReps(app.contactInfoView.index);
+  // }
 
   function printSection(divName) {
     var printContents = $(divName).html();
@@ -29,7 +26,8 @@ var app = app || {};
   formAsLetter.submit = () => {
     $('#print').on('click', (event) => {
       event.preventDefault();
-      printSection('#email-input');
+      app.letterView.index();
+      printSection('#print-letter-section');
     })
   }
   formAsLetter.submit();
