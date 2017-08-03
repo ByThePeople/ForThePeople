@@ -16,7 +16,6 @@ var app = app || {};
 
   formAsLetter.submit = () => {
     $('#print').on('click', (event) => {
-      event.preventDefault();
       let userObject = {
         issues: $('#subject').val(),
         username: $('#from').val(),
