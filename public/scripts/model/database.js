@@ -10,12 +10,7 @@ var app = app || {};
 
 //dont forget when this is called pass it an obj
   userIssues.insertIssues = function(userObject) {
-    console.log(userObject);
-
-    $.post('/issues', {
-      issues: userObject.issues,
-      userdate: userObject.userdate
-    }).then(console.log('inside insertIssues'))
+    $.post('/issues', {issues: userObject.issues})
   }
 
   module.userIssues = userIssues;

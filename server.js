@@ -9,8 +9,8 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
-const connectionString = process.env.DATABASE_URL || `postgres://localhost:5432/forthepeople`;
-// const connectionString = process.env.DATABASE_URL || `postgres://postgres:${process.env.PG_PASSWORD}@localhost:5432/forthepeople`;
+//const connectionString = process.env.DATABASE_URL || `postgres://localhost:5432/forthepeople`;
+const connectionString = process.env.DATABASE_URL || `postgres://postgres:${process.env.PG_PASSWORD}@localhost:5432/forthepeople` || `postgres://localhost:5432/forthepeople`;
 
 const client = new pg.Client(connectionString);
 client.connect();
@@ -31,7 +31,7 @@ console.log(req.body);
     (issues, userdate) VALUES($1, $2) ON CONFLICT DO NOTHING;`,
     [
       req.body.issues,
-      req.body.userdate
+      new Date()
     ])
     .catch(console.error);
 })
