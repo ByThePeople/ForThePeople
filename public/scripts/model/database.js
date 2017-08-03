@@ -13,5 +13,10 @@ var app = app || {};
     $.post('/issues', {issues: userObject.issues})
   }
 
+  // userIssues.getIssues = function() {
+  //   $.get('/issues')
+  //   .then(console.log('issues gottenified'))
+  // }
+
   module.userIssues = userIssues;
 })(app)

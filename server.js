@@ -24,18 +24,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 const PORT = process.env.PORT || 3000;
 
 
-app.post('/issues', function(req, res){
-console.log(req.body);
-  client.query(`
-    INSERT INTO issues
-    (issues, userdate) VALUES($1, $2) ON CONFLICT DO NOTHING;`,
-    [
-      req.body.issues,
-      new Date()
-    ])
-    .catch(console.error);
-})
-
 // /* nodemailer api language
 // ***************************************************/
 // // create reusable transporter object using the default SMTP transport
@@ -86,9 +74,19 @@ function loadDB() {
 
 loadDB();
 
+app.post('/issues', function(req, res){
+  client.query(`
+    INSERT INTO issues
+    (issues, userdate) VALUES($1, $2) ON CONFLICT DO NOTHING;`,
+    [
+      req.body.issues,
+      new Date()
+    ])
+})
 
-// Add connection to Postgres here
-// const connectionString = process.env.CONNECTION_STRING || `postgres://postgres:${process.env.PG_PASSWORD}@localhost:5432/reps`;
+// app.get('/issues', function(req, res){
+//   client.query(`SELECT issues, userdate FROM issues;`)
+// })
 
 app.listen(PORT, function() {
   console.log(`Listening on port ${PORT}`)
