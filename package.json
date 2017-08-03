@@ -4,6 +4,7 @@
   "description": "civic engagement in an app",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "fs": "0.0.1-security",
     "nodemailer": "^4.0.1",
