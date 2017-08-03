@@ -9,14 +9,12 @@ var app = app || {};
   const homeView = {};
 
   let renderTrendingIssues = Handlebars.compile($('#trending-issues-template').html());
-console.log(renderTrendingIssues());
   // trending issues to the DOM!
   homeView.index = () => {
     // Remove <li>'s to prepare for reloading them
     $('#trending-section').children('ul').empty();
     // Map issues
     let mappedIssues = module.userIssues.all.map(renderTrendingIssues);
-  console.log(mappedIssues);
     // Append issues to #trending-section
     $('#trending-section ul').append(mappedIssues);
   };
