@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="styles/state.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
+    <script id="trending-issues-template" type="text/x-handlebars-template">
+      <li>
+        {{issues}} {{userdate}}
+      </li>
+    </script>
     <script id="contact-info-template" type="text/x-handlebars-template">
       <representatives>
         <section class="rep-body">
@@ -62,15 +67,20 @@
       </header>
       <form id="address-input">
           Input Address: <input type="text" name="Street Address">
-            <button id="btn-submit-address" type="button" name="button">
+            <button id="btn-submit-address" type="submit" name="button">
               Submit Address
             </button>
-
       </form>
     </section>
 
     <section id="trending-section" class="page-element">
-
+      <header>
+        <h2>Trending Issues</h2>
+      </header>
+      <ul>
+        <!-- Append <li>'s here-->
+        <!-- issue, date -->
+      </ul>
     </section>
 
     <section id="contact-info-section" class="page-element">
@@ -137,7 +147,6 @@
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="scripts/model/app.js"></script>
     <script src="scripts/model/database.js"></script>
-    <script src="scripts/views/contactInfoView.js"></script>
     <script src="scripts/views/homeView.js"></script>
     <script src="scripts/controller/homeController.js"></script>
     <script src="scripts/views/contactInfoView.js"></script>

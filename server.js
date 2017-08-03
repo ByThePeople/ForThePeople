@@ -84,9 +84,11 @@ app.post('/issues', function(req, res){
     ])
 })
 
-// app.get('/issues', function(req, res){
-//   client.query(`SELECT issues, userdate FROM issues;`)
-// })
+app.get('/issues', function(req, res){
+  client.query(`SELECT issues, userdate FROM issues;`)
+  .then(result => res.send(result.rows))
+  .catch(console.error);
+})
 
 app.listen(PORT, function() {
   console.log(`Listening on port ${PORT}`)

@@ -11,6 +11,8 @@ var app = app || {};
   homeController.getHomeSection = () => {
     $('.page-element').hide();
     $('#home-section').fadeIn();
+    $('#trending-section').fadeIn();
+    module.getIssues(module.homeView.index);
   };
 
   userAddress.submit = function() {
