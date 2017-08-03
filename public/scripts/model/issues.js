@@ -8,9 +8,16 @@ var app = app || {};
 
   const userIssues = {};
 
-//dont forget when this is called pass it an obj
+  userIssues.all = [];
+
   userIssues.insertIssues = function(userObject) {
     $.post('/issues', {issues: userObject.issues})
+  }
+
+  module.getIssues = function(callback) {
+    $.get('/issues')
+    .then(result => userIssues.all = result)
+    .then(callback)
   }
 
   module.userIssues = userIssues;

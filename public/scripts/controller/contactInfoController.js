@@ -6,9 +6,6 @@ var app = app || {};
 
   const formAsLetter = {};
 
-  // From app.js, when submit email button, store form data
-  app.emailForm.getFormData();
-
   function printSection(divName) {
     var printContents = $(divName).html();
     var w = window.open();
@@ -20,6 +17,16 @@ var app = app || {};
   formAsLetter.submit = () => {
     $('#print').on('click', (event) => {
       event.preventDefault();
+      let userObject = {
+        issues: $('#subject').val(),
+        username: $('#from').val(),
+        body: $('#mail-body').val(),
+        userdate: new Date().toISOString()
+      };
+      // this next bit takes the issues and puts them in the database
+      app.userIssues.insertIssues(userObject);
+      // and this bit sends them to the print function
+      module.letterFormContent = userObject;
       app.letterView.index();
       printSection('#print-letter-section');
     })

@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="styles/state.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
+    <script id="trending-issues-template" type="text/x-handlebars-template">
+      <li>{{issues}} | {{userdate}}</li>
+    </script>
     <script id="contact-info-template" type="text/x-handlebars-template">
       <representatives>
         <section class="rep-body">
@@ -39,7 +42,7 @@
     </script>
 
     <script id="print-body-template" type="text/x-handlebars-template">
-      <p><strong>RE:{{issue}}</strong></p>
+      <p><strong>RE: {{issues}}</strong></p>
       <p>{{body}}</p>
       <p>Sincerely,</p>
       <p>{{username}}</p>
@@ -62,32 +65,31 @@
       </header>
       <form id="address-input">
           Input Address: <input type="text" name="Street Address">
-            <button id="btn-submit-address" type="button" name="button">
+            <button id="btn-submit-address" type="submit" name="button">
               Submit Address
             </button>
-
       </form>
     </section>
 
     <section id="trending-section" class="page-element">
-
+      <header>
+        <h2>Trending Issues</h2>
+      </header>
+      <ul></ul>
     </section>
 
     <section id="contact-info-section" class="page-element">
       <header>
         <h2>Governor</h2>
       </header>
-      <ul>
-      <!-- handlebars-generated content goes here -->
-      </ul>
+      <ul> </ul>
       <form id="email-input">
         <fieldset>
-          <legend>Write an email to your governor:</legend>
-          <input id="to" name="to" type="email" placeholder="Representative's Email" autocomplete="on" autofocus required/>
+          <legend>Write a letter to your governor:</legend>
           <input id="from" name="from" type="text" placeholder="Your Name" autocomplete="on" required/>
-          <input id="subject" name="subject" type="text" placeholder="Subject" autocomplete="on" required/>
-          <textarea id="email-body" name="email-body" placeholder="Write email here!" autocomplete="on" required/></textarea>
-          <button type="button" id="btn-send-email">Send Email</button> or <button id="print">Print</button>
+          <input id="subject" name="subject" type="text" placeholder="Subject/Issue" autocomplete="on" required/>
+          <textarea id="mail-body" name="mail-body" placeholder="Write letter here!" autocomplete="on" required/></textarea>
+          <button id="print">Print</button>
         </fieldset>
       </form>
     </section>
@@ -136,14 +138,12 @@
     <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.min.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="scripts/model/app.js"></script>
-    <script src="scripts/model/database.js"></script>
-    <script src="scripts/views/contactInfoView.js"></script>
+    <script src="scripts/model/issues.js"></script>
     <script src="scripts/views/homeView.js"></script>
     <script src="scripts/controller/homeController.js"></script>
     <script src="scripts/views/contactInfoView.js"></script>
     <script src="scripts/controller/contactInfoController.js"></script>
     <script src="scripts/views/letterView.js"></script>
-    <script src="scripts/controller/letterController.js"></script>
     <script src="scripts/controller/aboutController.js"></script>
     <script src="scripts/controller/routes.js"></script>
   </body>
