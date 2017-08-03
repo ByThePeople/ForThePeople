@@ -42,7 +42,7 @@
     </script>
 
     <script id="print-body-template" type="text/x-handlebars-template">
-      <p><strong>RE:{{issue}}</strong></p>
+      <p><strong>RE:{{issues}}</strong></p>
       <p>{{body}}</p>
       <p>Sincerely,</p>
       <p>{{username}}</p>
@@ -90,12 +90,11 @@
       </ul>
       <form id="email-input">
         <fieldset>
-          <legend>Write an email to your governor:</legend>
-          <input id="to" name="to" type="email" placeholder="Representative's Email" autocomplete="on" autofocus required/>
+          <legend>Write a letter to your governor:</legend>
           <input id="from" name="from" type="text" placeholder="Your Name" autocomplete="on" required/>
-          <input id="subject" name="subject" type="text" placeholder="Subject" autocomplete="on" required/>
-          <textarea id="email-body" name="email-body" placeholder="Write email here!" autocomplete="on" required/></textarea>
-          <button type="button" id="btn-send-email">Send Email</button> or <button id="print">Print</button>
+          <input id="subject" name="subject" type="text" placeholder="Subject/Issue" autocomplete="on" required/>
+          <textarea id="mail-body" name="mail-body" placeholder="Write letter here!" autocomplete="on" required/></textarea>
+          <button id="print">Print</button>
         </fieldset>
       </form>
     </section>
