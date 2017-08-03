@@ -18,7 +18,7 @@ var app = app || {};
       // Only one object in the array (governor), but we can expand to other reps later
       reps.all = data.officials;
     })
-    .then(callback);
+    .then(callback)
   }
 
 
