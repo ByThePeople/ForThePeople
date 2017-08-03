@@ -32,7 +32,8 @@ var app = app || {};
         userdate: new Date().toISOString()
       };
       emailForm.all = [];
-      emailForm.all.push(userObject);
+      emailForm.all = userObject;
+  console.log(emailForm.all);
       app.userIssues.insertIssues(userObject);
     })
   }
