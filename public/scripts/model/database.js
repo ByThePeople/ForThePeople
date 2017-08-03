@@ -15,12 +15,13 @@ var app = app || {};
     $.post('/issues', {issues: userObject.issues})
   }
 
-  userIssues.getIssues = function() {
+  module.getIssues = function(callback) {
     $.get('/issues')
-    .then(result => userIssues.all.push(result))
+    .then(result => userIssues.all = result)
+    //.then(_ => module.userIssues = userIssues)
+    .then(callback)
   }
 
-  userIssues.getIssues();
 console.log(userIssues.all);
   module.userIssues = userIssues;
 })(app)
