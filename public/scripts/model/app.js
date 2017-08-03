@@ -5,6 +5,7 @@ var app = app || {};
 
 (function(module) {
   let reps = {};
+  const emailForm = {};
 
   reps.all = [];
 
@@ -16,11 +17,26 @@ var app = app || {};
     .then(function(data) {
       // Only one object in the array (governor), but we can expand to other reps later
       reps.all = data.officials;
-      console.log(reps.all);
     })
-    .then(callback);
+    .then(callback)
   }
 
 
+  emailForm.getFormData = function () {
+    $('#btn-send-email').on('click', function(event){
+      event.preventDefault();
+      let userObject = {
+        issues: $('#subject').val(),
+        username: $('#from').val(),
+        body: $('#email-body').val(),
+        userdate: new Date().toISOString()
+      };
+      emailForm.all = [];
+      emailForm.all.push(userObject);
+      app.userIssues.insertIssues(userObject);
+    })
+  }
+
   module.reps = reps;
+  module.emailForm = emailForm;
 })(app);

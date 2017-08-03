@@ -42,7 +42,7 @@
       <p><strong>RE:{{issue}}</strong></p>
       <p>{{body}}</p>
       <p>Sincerely,</p>
-      <p>{{user-name}}</p>
+      <p>{{username}}</p>
     </script>
 
   </head>
@@ -87,7 +87,7 @@
           <input id="from" name="from" type="text" placeholder="Your Name" autocomplete="on" required/>
           <input id="subject" name="subject" type="text" placeholder="Subject" autocomplete="on" required/>
           <textarea id="email-body" name="email-body" placeholder="Write email here!" autocomplete="on" required/></textarea>
-          <button type="button">Send Email</button> or <button id="print">Print</button>
+          <button type="button" id="btn-send-email">Send Email</button> or <button id="print">Print</button>
         </fieldset>
       </form>
     </section>
@@ -136,6 +136,7 @@
     <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.min.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="scripts/model/app.js"></script>
+    <script src="scripts/model/database.js"></script>
     <script src="scripts/views/contactInfoView.js"></script>
     <script src="scripts/views/homeView.js"></script>
     <script src="scripts/controller/homeController.js"></script>
