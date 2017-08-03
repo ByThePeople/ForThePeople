@@ -3,14 +3,47 @@
 'use strict';
 
 const express = require('express');
+const pg = require('pg');
 const app = express();
+const fs = require('fs');
 
 const nodemailer = require('nodemailer');
+
+const connectionString = process.env.DATABASE_URL || `postgres://postgres:${process.env.PG_PASSWORD}@localhost:5432/forthepeople`;
+
+const client = new pg.Client(connectionString);
+client.connect();
+
+client.on('error', err => console.error(err));
 
 app.use(express.static('./public'));
 
 const PORT = process.env.PORT || 3000;
 
+//
+// app.post('/issues', function(req, res){
+// console.log(req);
+//   client.query(`
+//     INSERT INTO issues
+//     (issues, userdate) VALUES($1, $2) ON CONFLICT DO NOTHING;`,
+//     [
+//       req.body.issues,
+//       req.body.userdate
+//     ])
+//     .catch(console.error);
+// })
+
+app.post('/issues', function(req, res){
+console.log(req);
+  client.query(`
+    INSERT INTO issues
+    (issues) VALUES($1) ON CONFLICT DO NOTHING;`,
+    [
+      req.body.issues/*,
+      req.body.userdate*/
+    ])
+    .catch(console.error);
+})
 
 /* nodemailer api language
 ***************************************************/
@@ -45,7 +78,22 @@ transporter.sendMail(mailOptions, (error, info) => {
 /* end nodemailer section
 ******************************************************/
 
+//DATABASE LOADERS
+//Adapted from codefellows301 lab 13
 
+function loadDB() {
+  client.query(`
+    CREATE TABLE IF NOT EXISTS
+    issues (
+      id SERIAL PRIMARY KEY,
+      issues VARCHAR(255) NOT NULL,
+      userdate DATE
+    );`
+  )
+  .catch(console.error);
+}
+
+loadDB();
 
 
 // Add connection to Postgres here

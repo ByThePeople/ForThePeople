@@ -17,12 +17,10 @@ var app = app || {};
     .then(function(data) {
       // Only one object in the array (governor), but we can expand to other reps later
       reps.all = data.officials;
-      console.log(reps.all);
     })
     .then(callback);
   }
 
-  emailForm.all = {};
 
   emailForm.getFormData = function () {
     $('#btn-send-email').on('click', function(event){
@@ -30,9 +28,12 @@ var app = app || {};
       let userObject = {
         issues: $('#subject').val(),
         username: $('#from').val(),
-        body: $('#email-body').val()
+        body: $('#email-body').val(),
+        userdate: new Date().toISOString()
       };
-      emailForm.all = userObject;
+      emailForm.all = [];
+      emailForm.all.push(userObject);
+      app.userIssues.insertIssues(userObject);
     })
   }
 
