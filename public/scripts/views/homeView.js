@@ -18,9 +18,9 @@ var app = app || {};
     let mappedIssues = app.userIssues.all.map(renderTrendingIssues);
     // Append issues to #trending-section
     $('#trending-section ul').append(mappedIssues);
-
   };
 
+  homeView.index();
   // Attach homeView object to module. Module is the same as app.
   module.homeView = homeView;
 })(app);
