@@ -21,22 +21,20 @@ var app = app || {};
     .then(callback)
   }
 
-
-  emailForm.getFormData = function () {
-    $('#btn-send-email').on('click', function(event){
-      event.preventDefault();
-      let userObject = {
-        issues: $('#subject').val(),
-        username: $('#from').val(),
-        body: $('#email-body').val(),
-        userdate: new Date().toISOString()
-      };
-      emailForm.all = [];
-      emailForm.all = userObject;
-  console.log(emailForm.all);
-      app.userIssues.insertIssues(userObject);
-    })
-  }
+  // emailForm.getFormData = function () {
+  //   $('#btn-send-email').on('click', function(event){
+  //     event.preventDefault();
+  //     let userObject = {
+  //       issues: $('#subject').val(),
+  //       username: $('#from').val(),
+  //       body: $('#mail-body').val(),
+  //       userdate: new Date().toISOString()
+  //     };
+  //     emailForm.all = [];
+  //     emailForm.all = userObject;
+  //     app.userIssues.insertIssues(userObject);
+  //   })
+  // }
 
   module.reps = reps;
   module.emailForm = emailForm;
