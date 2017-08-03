@@ -8,12 +8,18 @@ var app = app || {};
 
   const homeView = {};
 
-  homeView.homeViewInit = () => {
-    $('.page-element').hide();
-    $('#home-section').fadeIn();
-  };
+  let renderTrendingIssues = Handlebars.compile($('#trending-issues-template').text());
 
-  homeView.homeViewInit();
+  // trending issues to the DOM!
+  homeView.index = () => {
+    // Remove <li>'s to prepare for reloading them
+    $('#trending-section').children('ul').empty();
+    // Map issues
+    let mappedIssues = app.userIssues.all.map(renderTrendingIssues);
+    // Append issues to #trending-section
+    $('#trending-section ul').append(mappedIssues);
+
+  };
 
   // Attach homeView object to module. Module is the same as app.
   module.homeView = homeView;
