@@ -20,6 +20,13 @@ var app = app || {};
   formAsLetter.submit = () => {
     $('#print').on('click', (event) => {
       event.preventDefault();
+      let userObject = {
+        issues: $('#subject').val(),
+        username: $('#from').val(),
+        body: $('#email-body').val(),
+        userdate: new Date().toISOString()
+      };
+      module.letterFormContent = userObject;
       app.letterView.index();
       printSection('#print-letter-section');
     })

@@ -12,8 +12,9 @@ var app = app || {};
     $('#print-letter-section').hide();
 
     let mappedHeader = app.reps.all.map(renderLetterHeader);
-    // let mappedRepsBody = userInfoObject
+    let mappedBody = renderLetterBody(module.letterFormContent);
     $('#print-header-div').append(mappedHeader);
+    $('#print-body-div').append(mappedBody);
   }
 
   module.letterView = letterView;
