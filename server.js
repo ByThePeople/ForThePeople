@@ -66,7 +66,7 @@ function loadDB() {
     issues (
       id SERIAL PRIMARY KEY,
       issues VARCHAR(255) NOT NULL,
-      userdate DATE
+      userdate TIMESTAMP
     );`
   )
   .catch(console.error);
@@ -85,7 +85,7 @@ app.post('/issues', function(req, res){
 })
 
 app.get('/issues', function(req, res){
-  client.query(`SELECT issues, userdate FROM issues;`)
+  client.query(`SELECT issues, userdate FROM issues ORDER BY userdate DESC LIMIT 5;`)
   .then(result => res.send(result.rows))
   .catch(console.error);
 })
