@@ -9,7 +9,7 @@ Project Pitch: [ForThePeople](https://forthepeeps.herokuapp.com/) is a civic eng
 
 Problem: Registered voters would like to contact their elected representatives to let them know what issues are important to them, and they need contact info.
 
-Solution: A web app that uses the Civic Info API from Google to find elected representatives and present contact information. Users can then write a letter to their representative in the app and either send as an email or print to mail in themselves.
+Solution: A web app that uses the Civic Info API from Google to find elected representatives and present contact information. Users can then write a letter to their representative in the app and print to mail in themselves.
 
 Benefits: With contact information, citizens have a means to get laws passed and/or changed!
 
@@ -32,6 +32,7 @@ For the People has a mobile-first UI and uses jQuery, Handlebars, and Page.js to
 Sara Jade: Sara is a pharmacist with who is changing careers. She has made the decision to go back to the future, doing what she almost did after graduating high school - software development! Along the way, she has obtained a degree in Information Systems, Software Development Track, from Bellevue College. She has also taught herself via Codecademy, the Railsbridge group, the Flatiron School, and Ada Developers Academy's Jumpstart program. Now she is an apprentice at Microsoft via Apprenti training at Codefellows.
 
 Britini Malloy: After getting out of the Navy I worked at a bank and was looking for ideas before deciding to go back to school to use my GI Bill Benefits. I could not stand the system we used to do our daily work. I was constantly coming up with new ideas that would make the system better and more user friendly, and make our work more efficient. I enrolled in a Computer Information Systems program and I worked for both my Bachelor's then my Master's. Unfortunately, it wasn't enough to help me get a job. Then the Apprenti program came along and gave me this great opportunity to go work for Micorosoft as a software dev apprentice.
+
 
 Drew Biehle: I am a software developer on my way to an apprenticeship at Microsoft through Apprenti. I have a degree in film and 11 years of market research experience, a beautiful and talented wife and an eerie and amazing son, and I'm proud to say I've voted for Democrats, Republicans, and Green Party candidates. Once I even shared a selfie with Paul Simon (the bow-tied Senator, not the singer).
 
