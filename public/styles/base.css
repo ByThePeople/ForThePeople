@@ -1,7 +1,11 @@
 body {
   color: #000;
-  background-color: #edf2f9; /* very light blue-gray */
-  font-family: sans-serif;
+  background-color: #ecf0f5; /* very light blue-gray */
+  font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 p {
+  text-align: center;
 }
 
 h1 {
