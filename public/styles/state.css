@@ -7,3 +7,20 @@
      display: inline;
    }
 }
+
+@media print {
+
+  /*#print-letter-section {*/
+    /*margin-top: 5cm;*/
+  /*}*/
+
+  /*#print-header-div {
+  /*font-family: sans-serif;*/
+  /*background-color: #fff;*/
+  /*border: none;*/
+
+  body {
+    font-size: 4em !important;
+    margin: 50cm !important;
+  }
+}
