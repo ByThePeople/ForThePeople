@@ -1,0 +1,12 @@
+/*FORM STYLES
+=======================================*/
+form input, textarea {
+  width: 90%;
+  margin: 20px;
+  border: 2px solid black;
+  font-size: 1.5em;
+}
+
+#address-input input {
+  width: 80%;
+}
