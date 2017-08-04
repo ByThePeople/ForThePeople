@@ -1,7 +1,30 @@
+/* Navigation menu styles */
+
 nav li {
   display: none;
 }
 
 .icon-menu {
   font-size: 200%;
+}
+
+/* About Us styles */
+img {
+  max-width: 100%;
+}
+
+#about-section h2 {
+  text-align: center;
+}
+
+#about-section ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#about-section li {
+  border: 1px solid black;
 }
