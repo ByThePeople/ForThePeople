@@ -8,6 +8,12 @@ var app = app || {};
 
   const homeView = {};
 
+  // Show and hide nav links after clicking hamburger menu
+  $('i.icon-menu').on('click', function(event) {
+    event.preventDefault();
+    $('nav#nav-bar').find('li').toggle();
+  });
+
   let renderTrendingIssues = Handlebars.compile($('#trending-issues-template').html());
   // trending issues to the DOM!
   homeView.index = () => {
