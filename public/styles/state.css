@@ -1,0 +1,9 @@
+@media (min-width: 640px){
+  .icon-menu {
+    display: none;
+  }
+
+  #nav-bar ul li {
+     display: inline;
+   }
+}
