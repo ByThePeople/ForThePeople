@@ -1,0 +1,44 @@
+body {
+  color: #000;
+  background-color: #edf2f9; /* very light blue-gray */
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: 'Tangerine', cursive;
+  font-size: 4em;
+  line-height: 1.25em;
+}
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15em;
+}
+
+h3 {
+  font-size: 1.375em;
+  line-height: 1.14em;
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.11em;
+}
+
+h5 {
+  font-size: .8em;
+  line-height: 1em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.25em;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
