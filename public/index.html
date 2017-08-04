@@ -5,7 +5,7 @@
     <title>For The People</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="favicon.ico" rel="shortcut icon">
-    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="vendor/icons.css">
     <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/state.css">
     <script id="trending-issues-template" type="text/x-handlebars-template">
-      <li>{{issues}} | {{userdate}}</li>
+      <li>{{issues}}</li>
     </script>
     <script id="contact-info-template" type="text/x-handlebars-template">
       <representatives>
@@ -21,11 +21,11 @@
            <li>
              <p>
                  {{name}}
-                 {{phones}}
+                 <br>{{phones}}
                  {{#if emails}}
-                   {{emails}}
+                   <br>{{emails}}
                  {{else if urls}}
-                   <a href="{{urls}}" target="_blank">Website</a>
+                   <br><a href="{{urls}}" target="_blank">Website</a>
                  {{/if}}
              </p>
            </li>
@@ -109,34 +109,39 @@
       </header>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/sara-jade/"><img src="/img/profilePicSara.jpg" alt="Sara Jade's Profile Picture"/>
-          <h3>Sara Jade</h3></a>
-          <p>Sara is a pharmacist with who is changing careers. She has made the decision to go back to the future,
-            doing what she almost did after graduating high school - software development! Along the way, she has obtained a degree
-            in Information Systems, Software Development Track, from Bellevue College. She has also taught herself via Codecdademy,
-            the Railsbridge group, the Flatiron School, and Ada Developers Academy's Jumpstart program. Now she is an apprentice at Microsoft via Apprenti
-            training at Codefellows.</p>
+          <a href="https://www.linkedin.com/in/sara-jade/"><img src="/img/profilePicSara.jpg" alt="Sara Jade's Profile Picture"/></a>
+          <div class="bio">
+          <h3>Sara Jade</h3>
+          <p>Sara is a pharmacist with who is changing careers. She has made the decision to go back to the future, doing what she almost did after graduating high school - software development! Along the way, she has obtained a degree in Information Systems, Software Development Track, from Bellevue College. She has also taught herself via Codecdademy, the Railsbridge group, the Flatiron School, and Ada Developers Academy's Jumpstart program. Now she is an apprentice at Microsoft via Apprenti training at Codefellows.</p>
+          </div>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/britini-malloy-a1a0b245/"><img src="/img/profilePicBritini.jpg" alt="Britini Malloy's Profile Picture"/>
-          <h3>Britini Malloy</h3></a>
-          <p>After getting out of the Navy I worked at a bank and was looking for ideas before deciding to go back to school to use my GI Bill Benefits. I could not stand the system we used to do our daily work. I was constantly coming up with new ideas that would make the system better and more user friendly, and make our work more efficient. I just had no idea how to do it, much less how to go about doing any such things. So, I enrolled in school in a Computer Information Systems program and I worked for both my Bachelor's then my Master's. Unfortunately, it wasn't enough to help me get a job. Then the Apprenti program came along and gave me this great opportunity. I have been striving ever since to learn and be worthy of my opportunity!</p>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/drew-biehle-844a2b15/"><img src="/img/profilePicDrew.jpg" alt="Drew Biehle's Profile Picture"/>
-          <h3>Drew Biehle</h3></a>
-          <p>I am a software developer on my way to an apprenticeship at Microsoft through Apprenti. I have a degree in film and 11 years of market research experience, a beautiful and talented wife and an eerie and amazing son, and I'm proud to say I've voted for Democrats, Republicans, and Green Party candidates. Once I even shared a selfie with Paul Simon (the bow-tied Senator, not the singer).</p>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/renard-burnett-39170369/"><img src="img/profilePicRon.jpg" alt="Ron Bartlett's Slappin' Picture"/>
-          <h3>Renard Burnett</h3></a>
+          <a href="https://www.linkedin.com/in/renard-burnett-39170369/"><img src="img/profilePicRon.jpg" alt="Ron Bartlett's Slappin' Picture"/></a>
+          <div class="bio">
+          <h3>Renard Burnett</h3>
           <p>Ol' Renny is an ex-composite repair technician who decided that after 6 short years at Boeing it was time for a career change!
           Something that involved fewer hazardous chemicals, more flexibility, and something that's never not interesting; computers and technology!
           In the immortal words of Cosmo Kramer: "Giddyup!"</p>
+          </div>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/britini-malloy-a1a0b245/"><img src="/img/profilePicBritini.jpg" alt="Britini Malloy's Profile Picture"/></a>
+          <div class="bio">
+          <h3>Britini Malloy</h3>
+          <p>After getting out of the Navy I worked at a bank and was looking for ideas before deciding to go back to school to use my GI Bill Benefits. I could not stand the system we used to do our daily work. I was constantly coming up with new ideas that would make the system better and more user friendly, and make our work more efficient. I enrolled in a Computer Information Systems program and I worked for both my Bachelor's then my Master's. Unfortunately, it wasn't enough to help me get a job. Then the Apprenti program came along and gave me this great opportunity to go work for Micorosoft as a software dev apprentice.</p>
+          </div>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/drew-biehle-844a2b15/"><img src="/img/profilePicDrew.jpg" alt="Drew Biehle's Profile Picture"/></a>
+          <div class="bio">
+          <h3>Drew Biehle</h3>
+          <p>I am a software developer on my way to an apprenticeship at Microsoft through Apprenti. I have a degree in film and 11 years of market research experience, a beautiful and talented wife and an eerie and amazing son, and I'm proud to say I've voted for Democrats, Republicans, and Green Party candidates. Once I even shared a selfie with Paul Simon (the bow-tied Senator, not the singer).</p>
+          </div>
         </li>
       </ul>
     </section>
     <footer>
+      &copy; ByThePeople | Codefellows 301
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.min.js"></script>

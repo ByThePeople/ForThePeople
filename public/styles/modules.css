@@ -1,7 +1,40 @@
+/* Navigation menu styles */
+
 nav li {
   display: none;
 }
 
 .icon-menu {
   font-size: 200%;
+}
+
+/* About Us styles */
+img {
+  max-width: 100%;
+  padding: 1em;
+}
+
+#about-section h2 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+#about-section ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#about-section ul li {
+  padding: 1em;
+}
+
+#about-section ul li:nth-child(odd) {
+  background-color: #a8c5ff; /* light blue */
+}
+
+#about-section ul li:nth-child(even) {
+  background-color: #ffa8a8; /* salmon */
 }
