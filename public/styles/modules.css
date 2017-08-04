@@ -25,6 +25,10 @@ img {
   text-align: center;
 }
 
-#about-section li {
-  border: 1px solid black;
+#about-section ul li:nth-child(odd) {
+  background-color: #a8c5ff; /* light blue */
+}
+
+#about-section ul li:nth-child(even) {
+  background-color: #ffa8a8; /* salmon */
 }
