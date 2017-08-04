@@ -5,11 +5,13 @@
     <title>For The People</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/icons.css">
     <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/state.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
+    <link rel="stylesheet" href="styles/state.css">
     <script id="trending-issues-template" type="text/x-handlebars-template">
       <li>{{issues}} | {{userdate}}</li>
     </script>
@@ -53,9 +55,10 @@
   <body>
     <header>
       <nav id="nav-bar">
+        <i class="icon-menu"></i>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/aboutus">About Us</a></li>
+          <li class="icon-home3"><a href="/">  Home</a></li>
+          <li class="icon-leaf"><a href="/aboutus">  About Us</a></li>
         </ul>
       </nav>
       <h1>For the People</h1>
@@ -65,10 +68,10 @@
         <h2>Contact Your Governor</h2>
       </header>
       <form id="address-input">
-          Input Address: <input type="text" name="Street Address">
-            <button id="btn-submit-address" type="submit" name="button">
-              Submit Address
-            </button>
+        <input type="text" name="Street Address" placeholder="Constituent's Address">
+        <button id="btn-submit-address" type="submit" name="button">
+          Submit Address
+        </button>
       </form>
     </section>
 
